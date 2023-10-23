@@ -3,19 +3,20 @@
 
 # # Surface Charge Exchanger
 # 
-# This code was designed as part of my master thesis.
+# This code was created as a part of my master's thesis.
 # About the project: 
 # The object of study was an esterase that exhibited moderate stability in organic solvents. 
-# A structurally similar esterase with much higher stability in organic solvents had a much more 
-# negatively charged surface, with the object esterase showing a uniform charge distribution. 
-# The hypothesis that changing the charge on the surface can increase stability was further investigated in 
-# my master's thesis. The data of previous experiments was used to determine the cut-offs.
+# A structurally similar esterase with higher stability in organic solvents had a highly expressed 
+# negatively charged surface, while the object esterase showed a uniform charge distribution. 
+# The hypothesis that changing the charge on the surface towards negative can increase stability 
+# was further investigated in my master's thesis. 
+# The data of previous experiments was used to determine the cut-offs.
 
 # By automating the data processing, the differences in output 
 # when varying the input files could be quickly identified and 
 # the optimal outcome was then tested in the lab.
 #
-# The main goal of this code was to obtain mutation suggestions 
+# The main goal of this script was to obtain mutation suggestions 
 # in order to modify the surface charge of the protein (an esterase)
 # by exchanging positive amino acids with negative ones and *vice versa*. 
 # 
@@ -28,8 +29,8 @@
 # 
 # If all three conditions are met, there would be mutations suggested based on:
 # (1) structural similarity and
-# (2) frequently occurance in multiple sequence alignment (MSA)
-# Since this code was written for a specific esterase with a stable countrepart, 
+# (2) frequent occurance in multiple sequence alignment (MSA)
+# Since this script was written for a specific esterase with a stable countrepart, 
 # it also contains data from
 # (3) the sequential alignment
 # (4) structural alignment 
@@ -56,7 +57,7 @@ from tabulate import tabulate
 # If there is a related protein with desired features:
 # PyMOL: Aligned PDB-files of protein of interest and the related protein (files with 11 and 12 columns are considered);
 # PyMOL: Sequence Alignment (".aln")
-# If no, please comment out (#) the alignment part and its results in ouput part
+# If no, please comment out (#) the alignment part and delete its results in ouput part
 
 working_directory = os.path.dirname(os.path.abspath(__file__))
 os.chdir(working_directory)
