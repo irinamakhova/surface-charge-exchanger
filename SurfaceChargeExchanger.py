@@ -3,7 +3,7 @@
 
 # # Surface Charge Exchanger
 # 
-# This code was created as a part of my master's thesis.
+# This script was created as a part of my master's thesis.
 # About the project: 
 # The object of study was an esterase that exhibited moderate stability in organic solvents. 
 # A structurally similar esterase with higher stability in organic solvents had a highly expressed 
@@ -21,7 +21,7 @@
 # by exchanging positive amino acids with negative ones and *vice versa*. 
 # 
 # It checks, whether: 
-# (1) the particular amino acid is conserved in the sequence so if 
+# (1) the particular amino acid is conserved in the genome so if 
 #     its exchange would be critical for the protein function or folding process and 
 # (2) the potential mutable amino acid is located on the surface.
 # (3) the residue showed higher flexibility during a molecular dynamics simulation (RMSF) 
